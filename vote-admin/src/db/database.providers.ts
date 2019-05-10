@@ -12,10 +12,10 @@ export const databaseProviders = [
         useFactory: async () => {
             const sequelize = new Sequelize({
                 dialect: 'mysql',
-                host: '10.161.9.96',
+                host: '127.0.0.1',
                 port: 3306,
                 username: 'root',
-                password: 'GzIT@2016',
+                password: '123456',
                 database: 'votes',
             });
             sequelize.addModels([User, Subject, Vote, List, Phase]);

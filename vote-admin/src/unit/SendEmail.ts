@@ -4,12 +4,12 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 export class SendEmail {
     private emailConfig = {
-        host: "10.170.9.116",
+        host: "127.0.0.1",
         port: 25,
         secure: false,
         auth: {
-          //  user: 'donotreply2', // generated ethereal user
-          //  pass: 'adobe0704' // generated ethereal password
+          //  user: '', // generated ethereal user
+          //  pass: '' // generated ethereal password
         }
     }
     async send(target, title, text, html) {
@@ -21,7 +21,7 @@ export class SendEmail {
             this.emailConfig
         );
         // setup email data with unicode symbols
-        let link ='http://10.161.9.105/vote/';
+        let link ='http://127.0.0.1/vote/';
         html += `<p> <a href=${link}>Click Link.</a></p>`
         let mailOptions = {
             from: '"Fred Foo 👻" <donotreply22@starcruises.com>', // sender address

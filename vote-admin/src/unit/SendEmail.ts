@@ -24,7 +24,7 @@ export class SendEmail {
         let link ='http://127.0.0.1/vote/';
         html += `<p> <a href=${link}>Click Link.</a></p>`
         let mailOptions = {
-            from: '"Fred Foo 👻" <donotreply22@starcruises.com>', // sender address
+            from: '"Fred Foo 👻" <moses.mo@126.com>', // sender address
             to: target, // list of receivers
             subject: title, // Subject line
             text: text, // plain text body

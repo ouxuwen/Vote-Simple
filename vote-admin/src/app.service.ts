@@ -14,7 +14,7 @@ export class AppService {
 
     if (res) {
       // 生成token
-      let token = md5(res['type'] + new Date().getTime() + 'gentingHK');
+      let token = md5(res['type'] + new Date().getTime() + 'fugui');
       let obj = Object.assign(res.dataValues, { token, 'create_date': new Date().getTime() });
       // 更新登录信息
       let updateRes = await this.userService.update(obj['uid'], obj);

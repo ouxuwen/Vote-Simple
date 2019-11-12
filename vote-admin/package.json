@@ -2,7 +2,7 @@
   "name": "vote-admin",
   "version": "0.0.0",
   "description": "vote admin",
-  "author": "moses",
+  "author": "ouxuwen",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
